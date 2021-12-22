@@ -1,0 +1,88 @@
+<!-- 
+Based on your refreshed knowledge on DOM manipulation, create a registration form that takes your 
+First Name, Last Name, Age, Gender (dropdown), Phone No, Present Address, Permanent Address. 
+There will be a checkbox named “Present and Permanent Address same”, 
+if the user checks it, Permanent Address will be automatically filled with the value of Present Address.  
+Now, upon submitting the form, the following should be met:
+
+1. All fields except Phone No are required. 
+Which means, if the user doesn’t fill up the fields, a corresponding error message will be shown in red just after that field. 
+If multiple fields are left blank, the same error message would be shown adjacent to the fields
+
+2. The Phone number should be valid and should not contain anything other than numbers. 
+If it does, show the appropriate message showing the error (look for isNaN function)
+
+3. The Phone No should have an exact length of 11. If it doesn’t, then show the proper error message adjacent to the field.
+
+4. When the user corrects the errors and submits, the previous errors should be cleared (if any) and then would show an 
+Alert saying “Submission Successful”
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class = "form" >
+        <h3 id = "heading">Registration Form</h3>
+
+        <form>
+            <label  for= "fname"> First Name : </label>
+            <input type = "text" id = "fname" name = "fname" placeholder="Your First Name" >
+            <span id = "iferrorfname" title = "First Name"></span> 
+            <br>
+            
+
+            <label for= "lname"> Last Name : </label>
+            <input type = "text" id = "lname" name = "lname" placeholder="Your Last Name" >
+            <span id = "iferrorlname" title = "Last Name"></span>
+            <br>
+
+            <label for= "age"> Age : </label>
+            <input type = "number" id = "age" name = "age" placeholder="Your age" >
+            <span id = "iferrorage" title = "Age "></span>
+            <br>
+
+            <label for= "gender"> Gender :</label>
+            <select id = "gender" name = "gender" >
+                <option value = "male"> Male </option>
+                <option value = "female"> Female </option>
+                <option value = "other"> Other </option>
+            </select>
+            <span id = "iferrorgender" title = "Gender"></span>
+            <br>
+
+            <label for= "phonenumber"> Phone Number : </label>
+            <input type = "tel" id = "phonenumber" name = "phonenumber" placeholder="000-000-00000" >
+            <span id = "iferrorphone"></span>
+            <br>
+        
+
+            <label for= "presentaddress"> Present Address : </label>
+            <input type = "text" id = "presentaddress" name = "presentaddress" placeholder="Your Present Address" >
+            <span id = "iferrorpresentadd" title = "Present Address"></span>
+            <br>
+
+            <label for ="sameaddress">Present and Permanent Address same : </label>
+            <input type = "checkbox" id = "sameaddress" name = "sameaddress">
+            <br>
+
+            <label for= "permanentaddress"> Permanent Address : </label>
+            <input type = "text" value = "" id = "permanentaddress" name = "permanentaddress" placeholder="Your Permanent Address" >
+            <span id = "iferrorpermanentadd" title = "Permanent Address"></span>
+            <br>
+
+            <button id = "submit">Submit</button>
+
+
+        </form>
+    
+    </div>
+    
+<script src = "hw04_registrationForm.js"></script>
+</body>
+</html>
