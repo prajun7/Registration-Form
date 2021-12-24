@@ -1,10 +1,10 @@
 # Registration Form
-This is a simple registration form which is designed to get data from the users such as their names, age, phone numbers, etc. Also, it validates those data and make sure the user enters all the field. 
+This is a simple registration form that is designed to get data from the users such as their names, age, phone numbers, etc. Also, it validates those data and makes sure the user enters all the fields. 
 
-Some of the validation that this program checks are:
+Some of the validation that the program checks are:
 
 1. All fields except Phone No are required. 
-Which means, if the user doesn’t fill up the fields, a corresponding error message will be shown in red just after that field. 
+This means, if the user doesn’t fill up the fields, a corresponding error message will be shown in red just after that field. 
 If multiple fields are left blank, the same error message would be shown adjacent to the fields
 
 2. The Phone number should be valid and should not contain anything other than numbers. 
@@ -17,4 +17,4 @@ Alert saying “Submission Successful”
 
 **I am using vanilla JavaScript and HTML to create the form.**
 
-I am planning to add CSS in future.
+I am planning to add CSS in the future.
