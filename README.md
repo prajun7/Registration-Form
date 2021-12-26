@@ -17,4 +17,4 @@ Alert saying “Submission Successful”
 
 **I am using vanilla JavaScript and HTML to create the form.**
 
-I am planning to add CSS in the future..
+I am planning to add CSS in the future.
