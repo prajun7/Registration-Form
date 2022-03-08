@@ -15,6 +15,8 @@ If it does, show the appropriate message showing the error (look for isNaN funct
 4. When the user corrects the errors and submits, the previous errors would be cleared (if any) and then would show an 
 Alert saying “Submission Successful”
 
+<img width="367" alt="Screen Shot 2022-03-07 at 9 09 40 PM" src="https://user-images.githubusercontent.com/67757251/157158850-4fbe4c55-da5d-4433-9e25-2dacd61b65ed.png">
+
 **I am using vanilla JavaScript and HTML to create the form.**
 
 **I am planning to add CSS in the future.**
